@@ -5,7 +5,7 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - name: clone on server
-   - uses: actions/checkout@v3
+     uses: actions/checkout@v3
    - name: set up project
      run: make setup
    - name: begin test
