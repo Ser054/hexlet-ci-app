@@ -1,0 +1,14 @@
+name: deploy
+on: push
+jobs:
+ deploy:
+  runs-on: ubuntu-latest
+  steps:
+   - name: clone on server
+   - uses: actions/checkout@v3
+   - name: set up project
+     run: make setup
+   - name: begin test
+     run: make test
+   - name: check linter
+     run: make lint
